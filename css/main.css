@@ -1,0 +1,307 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+}
+
+/*Блок 1*/
+header {
+    background: #59a6f3;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 150px;
+}
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.flex1_1 {
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.flex1_h1 {
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.anim_col {
+    animation-name: anim_col;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim_col{
+    0%, 100% {color: rgb(250, 250, 250); transform: rotate(0deg);}
+    50%{ color: rgb(255, 0, 0); transform: rotate(7deg); }
+}
+span{
+    font-size: 50px;
+}
+
+.flex1_big {
+    font-size: 80px;
+}
+
+.flex1_h6 {
+    margin-top: 70px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.flex1_button {
+    color: black;
+    background-color: rgb(255,218,22);
+    font-size: 20px;
+    padding: 15px;   
+    width: 150px;
+    height: 30px;  
+    transition: all 0.5s; 
+}
+
+.flex1_button:hover {   
+    background-color: rgb(250, 97, 9);
+    padding: 20px;  
+}
+.phone{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 462px;
+    transition: all 2s;
+}
+
+.phone:hover{
+    transform: translate(100px, 50px);
+    width: 662px;
+}
+
+/*Блок 2*/
+.main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+}
+
+.flex2_h2 {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    animation-name: flex2_h2;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flex2_h2 {
+    0%, 50%, 100% {transform: rotate(0deg);}
+    25% {transform: rotate(6deg);}
+    75% {transform: rotate(-6deg);}
+}
+
+.flex2 {
+     display: flex;
+     justify-content: space-between;
+
+}
+
+.flex20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_main {
+    width: 100px;
+    text-align: center;
+    margin-top: 25px;
+    height: 90px;
+}
+
+.flex20_p {
+    width: 300px;
+    text-align: center;
+}
+
+.flex20_p:hover {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*Блок lab8*/
+.lab8 {
+    background-color: rgba(182, 250, 173, 0.801);
+    text-align: center;
+    display: flex;
+}
+
+  select {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-color: black;
+  }
+
+
+form {
+    font-size: 15px;
+}
+
+form input,
+button {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    background-color: rgb(255,218,22);
+    width: 300px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+
+/*Блок 3*/
+.forms {
+    background-color: rgb(220, 243, 247);
+    text-align: center;
+    display: flex;
+}
+
+.h2_form {
+    margin-top: 100px;
+    padding-top: 100px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+form {
+    font-size: 15px;
+}
+
+form input,
+button {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    background-color: rgb(255,218,22);
+    width: 305px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+
+/*Блок 4*/
+.footer {
+    padding: 50px;
+    color: white;
+    background-color: rgb(37,120,194);
+    text-align: center;
+    animation-name: footer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footer{
+    0%,100% {
+        background: #8234a7;
+    }
+    50% {
+        background: rgb(37,120,194);
+    }
+}
+
+/*Media запросы CSS для адаптации страницы*/
+    
+@media screen and (max-width: 1200px)
+
+{
+
+}
+
+/* Большие девайсы (desktops, 992px and up)*/
+
+@media screen and (max-width: 992px)
+
+{
+
+    .flex2 {
+        flex-direction: column;
+    }
+    
+    .phone{
+        width: 450px;
+        align-items: column;
+    }
+
+    
+}
+
+/* Средние девайсы (tablets, 768px and up)*/
+
+@media screen and (max-width: 768px)
+
+{
+    .phone{
+        width: 450px;
+    }
+
+    .container {
+        width: 40em;
+        align-items: center;
+    }
+
+    .main {
+            width: 40em;
+    }
+
+    .flex1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex1_1 {
+        text-align: center;
+    }
+
+    .phone{
+        width: 400px;
+        align-items: column;
+    }
+
+}
+
+/* Маленькие девайсы (landscape phones, 576px and up)*/
+
+@media screen and (max-width: 576px)
+
+{
+    .container {
+        width: 25em;
+        align-items: center;
+    }
+
+    .main {
+            width: 25em;
+    }
+
+    .phone{
+        width: 350px;
+    }
+
+}
